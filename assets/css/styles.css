@@ -432,18 +432,22 @@ footer::after {
 @media screen and (max-width: 700px) {
 
 body{
-  display: block;
+  display: inline-block;
 }
 
+  * {
+    padding: 0;
+    
+  }
 
   main {
     padding: 0;
     margin: 0;
-    
   }
 
   .container {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     margin: 2rem;
     text-align: center;
     justify-content: center;
@@ -453,7 +457,7 @@ body{
   .world-characters {
     width: 600px;
     margin-bottom: 0;
-    
+    width: 60vw;
   }
   .dark-theme button,
   .dark-theme h1,
@@ -469,11 +473,8 @@ body{
   h3 {
     padding: 0;
     margin: 0;
-    text-align: center;   
-  }
-
-  #section-stranger-things-gallery{
-    display: auto;
+    text-align: center;
+    width: 100%;
   }
 
   p {
